@@ -1,0 +1,11 @@
+
+.login-btn{
+ width: 100%;
+}
+.register-panel-check-box > .form-control{
+    width: 50%;
+    display: inline-block;
+}
+.register-panel-check-box >.btn{
+    width: 50%;
+}

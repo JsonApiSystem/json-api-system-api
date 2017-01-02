@@ -1,0 +1,10 @@
+.left-menu {
+    width: 100%;
+    height: 100%;
+    background-color: #2E2D2B;
+    position:absolute
+}
+
+.menu-box{
+    margin-top: 50px;
+}

@@ -1,0 +1,19 @@
+.left-menu-box {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    display: inline-block;
+    z-index: 9999999;
+}
+
+.dash-box {
+    height: 100%;
+}
+
+.desktop-box {
+    width: 100%;
+    padding-left: 60px;
+    height: 100%;
+    position: absolute;
+    background: #eeeeee;
+}

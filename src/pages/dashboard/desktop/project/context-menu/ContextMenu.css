@@ -1,0 +1,7 @@
+.context-menu {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: red;
+    z-index: 99999;
+}

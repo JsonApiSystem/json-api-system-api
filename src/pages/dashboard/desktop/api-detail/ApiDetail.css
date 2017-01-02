@@ -1,0 +1,22 @@
+.api-detail-panel {
+    width: 50%;
+    background-color: #ffffff;
+    height: 100%;
+    float: right;
+    padding: 10px;
+    box-shadow: #aaaaaa -2px -2px 5px;
+    overflow-y: scroll;
+}
+
+.api-detail-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+
+}
+label{
+    line-height: 34px;
+}
