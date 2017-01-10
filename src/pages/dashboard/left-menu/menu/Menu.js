@@ -6,7 +6,7 @@ class Menu extends Component {
   render() {
     return (
       <div >
-          <MenuItem/>
+          <MenuItem name="项目"  link="/dashboard/project" icon="reorder"/>
           <MenuItem/>
           <MenuItem/>
           <MenuItem/>

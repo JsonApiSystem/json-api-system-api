@@ -13,8 +13,24 @@
     font-size: 20px;
     color: #aaaaaa;;
     margin-top: 40px;
+    line-height:50px;
 }
 .project-group{
     overflow: hidden;
     clear: both;
+}
+.project-new{
+    color: #555555;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 50px;
+    transition: color 0.5s;
+}
+.project-new:hover{
+    color:#000000
+}
+.project-new:active{
+    color: #aaaaaa;
+
 }

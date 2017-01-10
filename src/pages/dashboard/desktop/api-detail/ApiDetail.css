@@ -1,22 +1,33 @@
-.api-detail-panel {
-    width: 50%;
+.com-api-detail{
+    width: 100%;
+    height:100%;
+    background-color: rgba(255,255,255,0.5);
+}
+.box-api-panel {
+    width: 80%;
     background-color: #ffffff;
     height: 100%;
-    float: right;
-    padding: 10px;
-    box-shadow: #aaaaaa -2px -2px 5px;
-    overflow-y: scroll;
-}
-
-.api-detail-box {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,.5);
+    right: 0;
+    padding: 20px;
+    box-shadow: #aaaaaa -2px -2px 5px;
+    font-size: 0;
 
 }
 label{
     line-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.box-2{
+    width: 20%;
+    display: inline-block;
+    font-size: 14px;
+}
+.box-8{
+    width: 80%;
+    display: inline-block;
+    font-size: 14px;
+
 }

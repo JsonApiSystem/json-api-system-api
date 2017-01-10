@@ -9,9 +9,9 @@ class TopBar extends Component {
                     <p className="title">API接口列表</p>
 
                 </div>
-                <div className="teamer-box">
-                    <Teamer/>
-                </div>
+                {/*<div className="teamer-box">*/}
+                    {/*/!*<Teamer/>*!/*/}
+                {/*</div>*/}
             </div>
         );
     }

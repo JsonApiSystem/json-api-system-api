@@ -4,14 +4,29 @@
  * DATE : 02/01/2017
  * SUMMARY :
  */
-import {USER_LOGIN} from '../actions'
+import {createStore} from 'redux'
+import {USER_LOGIN, INIT_MY_PROJECT, INCREMENT_MY_PROJECT} from '../actions'
 const myApp = (state = [], action) => {
     switch (action.type) {
-        case USER_LOGIN: {
+
+        case INIT_MY_PROJECT: {
             return {
-                user: action.user
+                projects: []
+            }
+        }
+        case INCREMENT_MY_PROJECT: {
+            return {
+                projects: [
+                    ...state.projects,
+                    {
+                        'name': '111'
+                    }
+                ]
             }
         }
     }
+
 }
-export default myApp
+
+const store = createStore(myApp)
+export default  store

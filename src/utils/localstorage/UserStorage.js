@@ -6,7 +6,7 @@ class UserStorage {
     }
 
     getUserinfo() {
-        return localStorage.getItem(USER_INFO)
+        return JSON.parse(localStorage.getItem(USER_INFO))
     }
 }
 export default new UserStorage()

@@ -5,11 +5,11 @@ import Content from './content/Content'
 class Api extends Component {
     render() {
         return (
-            <div className="api">
-                <div className="top-bar-box">
+            <div className="com-api">
+                <div className="box-top-bar">
                     <TopBar/>
                 </div>
-                <div className="content-box">
+                <div className="box-content">
                     <Content/>
                 </div>
             </div>

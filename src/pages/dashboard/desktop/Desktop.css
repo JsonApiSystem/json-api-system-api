@@ -1,11 +1,39 @@
-.desktop{
-  background-color:#F8F6F2;
-  width: 100%;
-  height: 100%;
+.com-desktop {
+    position: relative;
+    background-color: #F8F6F2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
-.top-bar-box{
-    height: 7%;
+
+.box-api {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
-.content-box{
-    height: 93%;
+
+.box-panel {
+    z-index: 9999999;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.close-panel {
+    margin-top: 20px;
+    color: #aaaaaa;
+    line-height: 100%;
+    float: left;
+    margin-left: 5%;
+    height: 100%;
+}
+
+.close-panel:hover {
+    color: #555555;
+}
+
+.close-panel:active {
+    color: #000000;
 }

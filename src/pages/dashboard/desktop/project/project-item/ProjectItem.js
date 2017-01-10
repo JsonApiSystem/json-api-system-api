@@ -4,8 +4,8 @@ class ProjectItem extends Component {
     render() {
         return (
             <div className="project-item">
-                <p className="project-name">name</p>
-                <p className="project-summary">summary</p>
+                <p className="project-name">{this.props.name}</p>
+                <p className="project-summary">{this.props.summary}</p>
             </div>
         );
     }

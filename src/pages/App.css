@@ -1,0 +1,7 @@
+.box-com-toast {
+    position: fixed;
+    width: 300px;
+    z-index:99999999999999999;
+    right: 0px;
+    padding: 10px;
+}

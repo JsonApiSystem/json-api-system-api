@@ -11,12 +11,11 @@ import LoginPanel from  './pages/login/login-panel/LoginPanel'
 import RegisterPanel from  './pages/login/register-panel/RegisterPanel'
 import ApiDetail from './pages/dashboard/desktop/api-detail/ApiDetail'
 import Desktop from './pages/dashboard/desktop/Desktop'
-import {createStore} from 'redux'
 import ProjectConfig from './pages/dashboard/desktop/project-config/ProjectConfig'
 import {Provider} from 'react-redux';
 import Project from './pages/dashboard/desktop/project/Project'
 
-import reducer from './redux/reducer/index'
+import store from './redux/reducer/index'
 
 const routes = {
     path: '/',
@@ -48,30 +47,18 @@ const routes = {
                     component: Project
                 },
                 {
-                    path: 'desktop',
-                    component: Desktop,
-                    childRoutes: [
-                        {
-                            path: 'detail',
-                            component: ApiDetail
-                        },
-                        {
-                            path: 'config',
-                            component: ProjectConfig
-                        }
-                    ]
+                    path: 'desktop/:id',
+                    component: Desktop
                 }
             ]
         },
 
     ]
 }
-const store = createStore(reducer)
 
 ReactDOM.render(
     <Provider store={store}>
         <Router history={browserHistory} routes={routes}/>
     </Provider>,
     document.getElementById('root')
-
 );

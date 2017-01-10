@@ -1,0 +1,16 @@
+.com-new-project{
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+.com-new-project .title{
+    line-height: 46px;
+    border-bottom: 1px solid #eeeeee;
+}
+.summary{
+    resize: none;
+}

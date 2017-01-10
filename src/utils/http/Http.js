@@ -3,25 +3,26 @@ class Http {
 
     }
 
-    static post(url, data, success, failure, error = '') {
+    static post(url, data, success,error = '') {
+        var body = {
+            data: data,
+            timestamp: (new Date()).valueOf(),
+            sign: (new Date()).valueOf()
+        }
         fetch(url, {
             method: 'POST',
-            body: JSON.stringify(data)
+            body: JSON.stringify(body),
+
         }).then((res) => {
-                if (res.ok) {
+                console.log(res)
+                if (res.status==200) {
                     return res.json()
                 } else {
-                    if (failure === '') {
-                        console.log(res.status)
-                    }
+                    error(res.status)
                 }
             }
-        ).then((data) => {
-            if (data['code'] === 200) {
-                success(data['data']);
-            } else {
-                failure(data['code'])
-            }
+        ).then((data)=>{
+            success(data['data'])
         })
     }
 }
